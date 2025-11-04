@@ -1,0 +1,83 @@
+# 🗓️ Projeto Agenda - Django
+
+## 📋 Descrição do Projeto
+Este projeto tem como objetivo criar uma aplicação web simples para **agendamento de compromissos**, permitindo que o usuário cadastre informações como **nome completo**, **telefone**, **e-mail** e **observações**.  
+
+Foi desenvolvido com o framework **Django**, aplicando o padrão **MVT (Model-View-Template)** e utilizando o **SQLite** como banco de dados.  
+O foco é demonstrar o uso de formulários, modelos, templates e rotas de forma integrada e funcional.
+
+---
+
+## 🚀 Funcionalidades
+- ✅ Cadastro de agendamentos (nome, telefone, e-mail e observação)  
+- ✅ Listagem de todos os agendamentos  
+- ✅ Edição e exclusão de registros  
+- ✅ Validação de campos obrigatórios  
+- ✅ Layout simples com Bootstrap  
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+- **Python 3.13**
+- **Django 5.x**
+- **HTML5 / CSS3**
+- **Bootstrap 5**
+- **SQLite (banco de dados padrão do Django)**
+
+---
+
+## ⚙️ Estrutura do Projeto
+DW3_Projeto_Prova/
+│
+├── agenda/                 # App principal do projeto
+│   ├── migrations/
+│   ├── templates/agenda/   # Templates HTML
+│   ├── static/agenda/      # Arquivos estáticos (CSS, JS, imagens)
+│   ├── models.py           # Modelos de dados
+│   ├── views.py            # Lógica das views
+│   ├── urls.py             # Rotas da aplicação
+│   └── forms.py            # Formulários (caso utilizado)
+│
+├── DW3_Projeto_Prova/      # Configurações do projeto Django
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+│
+├── venv/                   # Ambiente virtual
+├── manage.py
+├── requirements.txt
+└── README.md
+
+##💻 Como Executar o Projeto
+1️⃣ Criar o ambiente virtual
+python -m venv venv
+2️⃣ Ativar o ambiente virtual
+
+*Windows:*
+
+venv\Scripts\activate
+
+Linux/Mac:
+
+source venv/bin/activate
+3️⃣ Instalar as dependências
+pip install -r requirements.txt
+4️⃣ Rodar as migrações
+python manage.py migrate
+5️⃣ Iniciar o servidor
+python manage.py runserver
+6️⃣ Acessar no navegador
+http://127.0.0.1:8000/
+##🧠 Aprendizados
+
+Durante o desenvolvimento deste projeto, foram praticados os principais conceitos do Django:
+
+Criação e registro de apps
+
+Configuração e uso de models e migrations
+
+Implementação de templates com HTML e Django Template Language
+
+Manipulação de formulários via views
+
+Organização do projeto com base no padrão MVT
